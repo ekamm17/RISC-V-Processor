@@ -23,16 +23,16 @@ The following modules were used to implement the RISC-V processor:
 ### 1. Instruction Memory
 - Contains of 64 32-bit instruction registers to store the instructions that the processor needs to execute.
 - When the program counter (PC) provides an address, the instruction memory fetches the corresponding instruction and sends it to the control unit
-<img src="images/instruction_memory_module.png" alt="instruction_memory_module.png" width="800" height="500">
+<img src="images/instruction_memory_module.png" alt="instruction_memory_module.png" width="500" height="400">
 
 ### 2. Program Counter
 - Holds the address of the current instruction being executed.
 - After an instruction is executed, the PC is updated to point to the next instruction
-<img src="images/program_counter_module.png" alt="program_counter_module" width="800" height="500">
+<img src="images/program_counter_module.png" alt="program_counter_module" width="400" height="220">
 
 ### 3. PC Adder
 - Adds 4 to the current PC value to generate the address of the next sequential instruction.
-<img src="images/pc_adder_module.png" alt="pc_adder_module" width="800" height="500">
+<img src="images/pc_adder_module.png" alt="pc_adder_module" width="400" height="150">
 
 ### 4. Register Module
 - Contains 32 32-bit data registers to store data.
@@ -41,11 +41,11 @@ The following modules were used to implement the RISC-V processor:
 
 ### 5. Sign Extend 16 to 32 bit
 - Used to extend the 'Immediate' field of I type instructions from 16 bits to 32 bits as Program Counter length is required to be of 32 bits.
-<img src="images/sign_extend_module.png" alt="sign_extend_module" width="800" height="500">
+<img src="images/sign_extend_module.png" alt="sign_extend_module" width="400" height="130">
 
 ### 6. Main Control Unit
 - Decodes the instruction opcode and sends appropriate control signals to other components (like the ALU, data memory, and registers) to perform the required operation.
-<img src="images/mcu_module.png" alt="mcu_module" width="800" height="500">
+<img src="images/mcu_module.png" alt="mcu_module" width="800" height="450">
 
 ### 7. ALU Control Unit
 - Provides specific control signals to the ALU based on the ALUOp signal and 'Funct' field (5:0 bits of instruction).
