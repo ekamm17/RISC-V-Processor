@@ -50,6 +50,8 @@ The following modules were used to implement the RISC-V processor:
 ### 7. ALU Control Unit
 - Provides specific control signals to the ALU based on the ALUOp signal and 'Funct' field (5:0 bits of instruction).
 ![alu_control_module](images/alu_control_module.jpeg)
+![alu_control_module](images/alu_control_module2.jpeg)
+
 
 ### 8. ALU (Arithmetic Logic Unit)
 - Performs arithmetic and logical operations to the inputs from the registers or immediate values
