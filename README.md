@@ -46,17 +46,21 @@ The following modules were used to implement the RISC-V processor:
 ### 6. Main Control Unit
 - Decodes the instruction opcode and sends appropriate control signals to other components (like the ALU, data memory, and registers) to perform the required operation.
 <img src="images/mcu_module.png" alt="mcu_module" width="800" height="400">
+<img src="images/control_signals.png" alt="control_signals" width="600" height="300">
+<img src="images/controls_truth_table.png" alt="controls_truth_table" width="450" height="150">
+
 
 ### 7. ALU Control Unit
 - Provides specific control signals to the ALU based on the ALUOp signal and 'Funct' field (5:0 bits of instruction).
 <img src="images/alu_control_module.png" alt="alu_control_module" width="800" height="350">
+<img src="images/ALU_control.png" alt="ALU_control" width="500" height="250">
 
 ### 8. ALU (Arithmetic Logic Unit)
 - Performs arithmetic and logical operations to the inputs from the registers or immediate values
 - Can perform operations like addition, subtraction, AND, OR, and 'set less than'
 - Outputs the ALU result and a zero signal, which can influence branching.
 <img src="images/alu_module.png" alt="alu_module" width="500" height="500">
-<img src="images/alu_module2.png" alt="alu_module2" width="500" height="250">
+<img src="images/alu_module2.png" alt="alu_module2" width="500" height="220">
 
 ### 9. Data Memory
 - Stores and retrieves data used by the program. It can theoretically hold 2^32 32-bit memory blocks. But considering hardware capacity during simulation, I have implemented 2^10 = 1024 memory blocks.
